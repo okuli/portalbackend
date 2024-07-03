@@ -1,0 +1,31 @@
+jwt:
+    secret: '[a-zA-Z0-9._]^+$Guidelines89797987forAlphabeticalArraNumeralsandOtherSymbo$'
+
+
+
+server:
+  port: 8081
+#  error:
+#    whitelabel:
+#      enabled: false
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/supportportal #change this to your database url
+    username: postgres #change this to your database password
+    password: remember02  #change this to your database username
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  servlet:
+    multipart:
+      max-file-size: 5100KB
+      max-request-size: 5100KB
+#  mvc:
+#    throw-exception-if-no-handler-found: true
+#  resources:
+#    add-mappings: false

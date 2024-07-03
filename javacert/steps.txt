@@ -1,0 +1,6 @@
+1. Download the attached "InstallCert.java" java file.
+2. Compile the file using Javac
+3. Now execute the command: "java InstallCert <hostname-of-required-certificacte>:<port_number>
+4. It will create a file called "jssecacerts".
+5. Copy that file in your jdk/jre/lib/security
+6. Restart your service/application server etc.
